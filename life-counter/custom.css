@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Oswald", sans-serif;
+}
+.background {
+  background-image: url(images/R.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container h1 {
+  font-size: 4rem;
+}
+
+.setting {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.setting-content {
+  display: flex;
+  gap: 1.5rem;
+}
+.fa-gear {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.setting-content input {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: coral;
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  color: white;
+  box-shadow: 4px 2px 4px rgba(1, 1, 1, 0.3);
+}
+.setting-content:hover button {
+  background-color: rgb(10, 115, 10);
+}
+.hide {
+  display: none;
+}
+.time-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.time-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 60px;
+}
+.time-container div {
+  color: rgb(194, 25, 25);
+  font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .center {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .time-container {
+    width: 600px;
+    display: flex;
+  }
+  .container,
+  .center h1 {
+    font-size: 4rem;
+  }
+
+  .time-container h2 {
+    font-size: 2rem;
+  }
+  div.time-container {
+    gap: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .center {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .time-container {
+    width: 600px;
+    display: flex;
+  }
+  .container,
+  .center h1 {
+    font-size: 4rem;
+  }
+
+  .time-container h2 {
+    font-size: 2rem;
+  }
+  div.time-container {
+    gap: 10px;
+  }
+}
+

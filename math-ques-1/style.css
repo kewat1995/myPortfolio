@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: #8f00ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+.main{
+   background-image: url(images/pexels-photo-289586.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100vh;
+   display: grid;
+   place-items: center;
+   
+
+}
+
+.box{
+    background-color:rgba(240, 240, 240, 0.68);
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+    border: 2px solid #fcddec;
+    box-shadow: 0px 19px 41px rgba(0, 0, 0, 0.36);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.box h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: blue;
+    line-height: 48px;
+}
+.box h3{
+    font-size: 30px;
+    font-weight: 600;
+    
+    line-height: 54px;
+}
+#questionForm{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 100%;
+}
+#answerInput{
+    background: transparent;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 20px;
+}
+#answerInput:focus-visible{
+    border:1px solid var(--primary) ;
+    outline: 1px solid var(--primary);
+}
+#primary-btn{
+    
+    background-color: #8f00ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+}
+@media (max-width: 700px) {
+    .box{
+        width: 80%;
+        height: 320px;
+        padding: 20px;
+    }
+    .box h2{
+    font-size: 28px;
+    line-height: 40px;
+    }
+    .box h3{
+        font-size: 24px;
+        line-height: 32px;
+        }
+        #answerInput{
+            padding: 5px 20px;
+            margin: 20px;
+        }
+        #primary-btn{
+            font-size: 24px;
+            margin: 10px;
+        }
+}

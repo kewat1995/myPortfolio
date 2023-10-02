@@ -1,2 +1,2 @@
-# myPortfolio
-I build the javascript project this is my First challenge
+# myportfolio-website
+# add README.md file
